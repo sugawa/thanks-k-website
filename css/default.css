@@ -1,0 +1,457 @@
+@charset "utf-8";
+
+/*--*-- basic elements --*--*/
+
+html, body {
+	width: 100%;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 0 0 30px;
+	background-color: #f2edca;
+	color: #0c486e;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 10pt;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+
+a {
+	/*color: #a9a712;
+	text-decoration: none;*/
+}
+a:hover {
+	/*color: #999;
+	text-decoration: underline;*/
+}
+
+
+/*--*-- Main layout --*--*/
+
+/* layout */
+
+div#layout {
+	display: block;
+	position: relative;
+	width: 980px;
+	min-width: 980px;
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+	text-align: left;
+}
+/* for modern brouser */
+#layout:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+#layout {
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html #layout {
+	height: 1%;
+}
+#layout {
+	display: block;
+}
+/* End hide from IE-mac */
+
+div#left_column {
+	float: left;
+	display: block;
+	position: relative;
+	width: 230px;
+	height: auto;
+	margin: 0;
+	padding: 0 0 15px;
+}
+
+div#right_column {
+	float: right;
+	display: block;
+	position: relative;
+	width: 750px;
+	height: auto;
+	margin: 0;
+	padding: 0 0 15px;
+	background-color: #f2edca;
+}
+
+div#footer {
+	clear: both;
+	display: block;
+	position: relative;
+	width: 750px;
+	height: 14px;
+	margin: 0;
+	padding: 0 0 0 230px;
+	background-image: url(../img/footer.gif);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	text-align: left;
+}
+div#footer #copyright img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*--- Left Column ---*/
+
+/* header */
+
+div#header {
+	display: block;
+	position: relative;
+	width: 230px;
+	height: 220px;
+	margin: 0;
+	padding: 0 0 5px;
+	background-color: #f2edca;
+}
+
+div#header img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* navigation */
+
+div#navigation_area {
+	display: block;
+	position: relative;
+	width: 230px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+div#navigation_area a {
+	color: #fff;
+	text-decoration: none;
+}
+div#navigation_area a:hover {
+	text-decoration: underline;
+}
+
+div#navigation_area dl {
+	display: block;
+	position: relative;
+	margin: 230px;
+	height: auto;
+	margin: 0 0 5px;
+	padding: 0 0 10px;
+	color: #fff;
+}
+
+div#navigation_area dl.nav_b {
+	background-color: #0076c1;
+}
+div#navigation_area dl.nav_o {
+	background-color: #e94c19;
+}
+
+div#navigation_area dl dt {
+	display: inline;
+	position: relative;
+	width: 230px;
+	height: 35px;
+	margin: 0;
+	padding: 0;
+}
+div#navigation_area dl dt img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+div#navigation_area dl dd {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+div#navigation_area dl dd ul {
+	list-style: none none outside;
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+div#navigation_area dl dd ul li {
+	display: list-item;
+	position: relative;
+	margin: 0 0 0 23px;
+	padding: 0 0 0 20px;
+	background-image: url(../img/nav_marker.gif);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	line-height: 20px;
+}
+div#navigation_area dl dd ul li.end_item {
+	background-image: url(../img/nav_marker_end.gif);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+
+/*--- Right Column ---*/
+
+/* Contents Header */
+
+div#contents_header {
+	display: block;
+	position: relative;
+	width: 740px;
+	height: 200px;
+	margin: 0 0 5px;
+	padding: 10px 0 10px 10px;
+	overflow: hidden;
+}
+
+div#contents_header dl#introduction {
+	display: block;
+	position: relative;
+	width: 725px;
+	height: auto;
+	margin: 0 0 15px;
+	padding: 0 0 0 15px;
+}
+
+div#contents_header dl#introduction dt {
+	display: block;
+	position: relative;
+	width: auto;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+div#contents_header dl#introduction dd {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+div#contents_header dl#introduction dd img {
+	border: 0;
+	vertical-align: middle;
+}
+
+div#contents_header dl#recruit {
+	display: block;
+	position: relative;
+	width: 733px;
+	height: 92px;
+	margin: 0;
+	padding: 2px 6px 6px 1px;
+	background-image: url(../img/recruit_bg.gif);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+/* for modern brouser */
+div#contents_header dl#recruit:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+div#contents_header dl#recruit {
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html div#contents_header dl#recruit {
+	height: 1%;
+}
+div#contents_header dl#recruit {
+	display: block;
+}
+/* End hide from IE-mac */
+
+div#contents_header dl#recruit dt {
+	float: left;
+	display: block;
+	position: relative;
+	width: 316px;
+	height: 92px;
+	margin: 0;
+	padding: 0;
+}
+
+div#contents_header dl#recruit dd {
+	display: block;
+	position: relative;
+	margin: 0 0 0 316px;
+	padding: 6px;
+}
+
+div#contents_header dl#recruit dd img {
+	border: 0;
+	vertical-align: middle;
+}
+
+/* contents section */
+
+div#contents {
+	display: block;
+	position: relative;
+	width: 740px;
+	height: auto;
+	min-height: 1000px;
+	_height: 1000px;
+	margin: 0;
+	padding: 0;
+}
+
+div.entry {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0 0 15px;
+	padding: 0;
+	background-color: #0c486e;
+	color: #fff;
+}
+
+div.headline,
+div.maintext,
+div.footline {
+	display: block;
+	position: relative;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 15px 20px;
+}
+
+div.headline {
+	border-bottom: 1px dashed #7f9b9c;
+}
+
+div.footline {
+	padding: 5px 15px;
+	border-top: 1px dashed #7f9b9c;
+	text-align: right;
+}
+
+div.headline .tags,
+div.headline h2 {
+	display: block;
+	position: relative;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 1px 0 1px 10px;
+	border-left: 5px solid #e94a21;
+}
+
+div.headline .tags .o_tag {
+	padding: 0 3px;
+	background-color: #e94a21;
+	font-weight: bold;
+}
+
+div.headline h2 {
+	font-size: 14pt;
+	color: #fff;
+}
+
+
+
+/*--*-- General --*--*/
+
+.none {
+	display: none;
+}
+
+.f_left {
+	float: left;
+}
+
+.f_right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.f8 {
+	font-size: 8pt;
+}
+
+.f12 {
+	font-size: 12pt;
+	line-height: 1.5em;
+}
+
+.f14 {
+	font-size: 14pt;
+	line-height: 1.5em;
+}
+
+.f16 {
+	font-size: 16pt;
+	line-height: 1.5em;
+}
+
+.f18 {
+	font-size: 18pt;
+	line-height: 1.5em;
+}
+
+.f20 {
+	font-size: 20pt;
+	line-height: 1.5em;
+}
+
+.t_center {
+	text-align: center;
+}
+
+.t_right {
+	text-align: right;
+}
+
+
+/*--*-- clear fix --*--*/
+
+/* for modern brouser */
+.clf:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clf {
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clf {
+	height: 1%;
+}
+.clf {
+	display: block;
+}
+/* End hide from IE-mac */
