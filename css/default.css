@@ -216,7 +216,7 @@ div#contents_header {
 	display: block;
 	position: relative;
 	width: 740px;
-	height: 200px;
+	/* height: 200px; */
 	margin: 0 0 5px;
 	padding: 10px 0 10px 10px;
 	overflow: hidden;
@@ -455,3 +455,16 @@ div.headline h2 {
 	display: block;
 }
 /* End hide from IE-mac */
+
+
+/* style for 2nd concert */
+div.flyer {
+	margin-bottom: 20px;
+}
+div.flyer a {
+	color: #ffffff;
+	font-weight: bold;
+}
+div.flyer img {
+	border: 0;
+}
